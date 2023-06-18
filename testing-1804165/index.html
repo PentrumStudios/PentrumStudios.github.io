@@ -5,21 +5,32 @@
 <title>Pentrum - Lobby</title>
 </head>
 <link rel="stylesheet" href="outcss/fonts.css">
+<link rel="stylesheet" href="animations/animations.css">
 <body>
 
 	<style>
 		body {	
-			background: #080917 }
+			background: #111111 }
 	</style>
+	<a href="https://pentrumstudios.github.io/server.html" class="server">
 	<div class="server"></div>
-	<h1 class="server">Server<span class="title-line"></span></h1>
+	 <h1 class="server">Server<span class="title-line"></span></h1>
+	</a>
+	<a href="https://pentrumstudios.github.io/client.html" class="client">
 	<div class="client"></div>
-	<h1 class="client">Client<span class="title-line"></span></h1>
+	 <h1 class="client">Client<span class="title-line"></span></h1>
+	</a>	
 	<style>
+		 a.server {
+		    display: block;
+			text-decoration: none;
+			margin: 0px auto;
+			width: 80px;
+		   }		
 		.server {
 			position: absolute;
 			left: 50%;
-			color: #1E2A83;
+			color: #086ab4;
 			font-size: 28px;
 			scale: 1;
 			width: 80px;
@@ -27,28 +38,34 @@
 			margin: 0 auto;
 			margin-top: 10px;
 			margin-left: -310px;
-			transition: color 0.25s linear, transform 0.25s ease-in-out;
+			transition: color 0.25s linear, transform 0.5s cubic-bezier(.53,-0.3,.15,1.95);
 			transform: scale(1)
 		}	
 		.server:hover {
-			color: #405ff7;
-			transform: scale(1.1);
+			color: #2f3b92;
+			transform: scale(1.05);
 		}
+		 a.client {
+		    display: block;
+			text-decoration: none;
+			margin: 0 auto;
+			width: 80px;
+		   }		
 		.client {
 			position: absolute;
 			left: 50%;
-			color: #1E2A83;
+			color: #086ab4;
 			font-size: 28px;
 			width: 80px;
 			font-family: "moonb", sans-serif;
-			margin-left: 220px;
+			margin-left: 150px;
 			margin-top: 10px;
-			transition: color 0.25s linear, transform 0.25s ease-in-out;
+			transition: color 0.25s linear, transform 0.5s cubic-bezier(.53,-0.3,.15,1.95);
 			transform: scale(1)
 		}	
 		.client:hover {
-			color: #405ff7;
-			transform: scale(1.1);
+			color: #2f3b92;
+			transform: scale(1.05);
 		}			
 	</style>
 	<a href="https://pentrumstudios.github.io/" class="title">
@@ -63,16 +80,17 @@
 			   width: 340px;
 		   }
 		   .title {
-			   color: #405ff7;
+			   color: #086ab4;
 			   font-size: 46px;
 			   font-family: 'moonb', sans-serif;
 			   margin: 0 auto;
 			   margin-top: 15px;
 			   width: 340px;
-			   transition: transform 0.25s ease;
+			   transition: color 0.3s linear ,transform 0.5s cubic-bezier(.6,0,.09,1.64);
 		   }
 		   .title:hover {
-			   transform: translateY(-5px);
+			   color: #2f3b92;
+			   transform: translateY(-3px);   
 		   }
 	   </style>   
 	<div class="title-line"></div>
@@ -80,12 +98,12 @@
      .title-line {
 		opacity: 0;
        	width: 330px;
-  		height: 10px;
+  		height: 5px;
   		display: flex;
   		background-size: 300% 300%;
-        background: #405ff7;
+        background: #2f3b92;
 		border-radius: 25px;
-		transition: opacity 0.25s ease, transform 0.5s ease;
+		transition: opacity 0.25s ease, transform 0.7s ease;
 		transform: scale(0);		
                 }
 			    .title:hover .title-line {
@@ -97,28 +115,108 @@
 		<style>
 			.navbar {
 				opacity: 1;
-				background: #080917;
-				width: 100%;
+				background: #111111;
+				width: 40%;
 				height: 70px;
 				box-shadow: 0px 5px 50px 15px rgba(0, 0, 0, 1);
 				margin: 0 auto;
-				margin-top: -80px;
-				border-radius: 25px;
-				transition: box-shadow 0.25s ease;
-				overflow: hidden;
+				margin-top: -72px;
+				border-radius: 10px;
+				transition: box-shadow 0.25s ease, transform 0.2s cubic-bezier(.6,0,.09,1.64);
 			}
   .navbar:hover,		
   .title:hover ~ .navbar {
-    box-shadow: 0 0px 100px rgba(64, 95, 247, 1);
+	  box-shadow: 0px 0px 50px 0px #2f3b92;
   }	
   .navbar:hover,		
   .server:hover ~ .navbar {
-    box-shadow: 0 0px 100px rgba(64, 95, 247, 1);
+	  box-shadow: 0px 0px 50px 0px #2f3b92;
   }	
   .navbar:hover,		
   .client:hover ~ .navbar {
-    box-shadow: 0 0px 100px rgba(64, 95, 247, 1);
-  }				
+	  box-shadow: 0px 0px 50px 0px #2f3b92;
+  }					
 	</style>
 </body>
+<body>
+	<div class="start-up-line"></div>
+	<style>
+		.start-up-line {
+			display: flex;
+			width: 100%;
+			height: 5px;
+			background-color: #020206;
+			margin: 15px auto;
+		}
+	</style>
+	<div class="start"></div>
+	 <h1 class="start">Your journey starts here and now<span class="start-line"></span></h1>
+	<style>
+		.start {
+			color: #2f3b92;
+			font-size: 52px;
+			font-family: "moonr", sans-serif;
+			width: 830px;
+			margin: 20px auto;
+			transition: color 0.25s linear, transform 0.4s cubic-bezier(.53,-0.3,.15,1.95);
+		}
+		.start:hover {
+			transform: scale(1.1);
+			color: #086ab4; 
+		}
+	</style>
+	<style>
+     .start-line {
+		opacity: 0;
+       	width: 70px;
+  		height: 5px;
+		margin: 10px auto;
+		display: flex;
+        background: #086ab4;
+		border-radius: 25px;
+		transition: opacity 0.2s ease, width 0.7s ease, color 0.2s ease;		
+                }
+			    .start:hover .start-line {
+	  color: #086ab4;
+      opacity: 1;
+	  width: 820px
+    }
+	</style>
+	<div class="start-description"></div>
+	 <h5 class="start-description">Just look how far we have come since the launch of Pentrum Studios<span class="start"></span></h5>
+	<style>
+		.start-description {
+			color: #727272;
+			font-size: 20px;
+			font-family: "moonr", sans-serif;
+			margin: -25px auto;
+			width: 670px;
+			line-height: 0.5;
+		}
+	</style>
+	<body>
+		<div class="show1">
+		  <img src="pngs/show1.png"/>
+		</div>
+		<div class="show2"></div>
+		<style>
+			.show1 {
+				width: 360px;
+				height: 180px;
+				border: 2px solid #555555;
+				overflow: hidden;
+			}
+			.show1 > img {
+				width: 100%;
+				height: 100%;
+				transition: transform 0.4s cubic-bezier(.53,-0.3,.15,1.95);
+			}
+			.show1:hover > img {
+				transform: scale(0.92);
+				
+			}
+		</style>
+	</body>
+	
+</body>	
 </html>
