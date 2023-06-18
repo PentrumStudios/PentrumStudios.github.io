@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pentrum - Lobby</title>
+</head>
+<link rel="stylesheet" href="outcss/fonts.css">
+<body>
+
+	<style>
+		body {	
+			background: #080917 }
+	</style>
+	<div class="server"></div>
+	<h1 class="server">Server<span class="title-line"></span></h1>
+	<div class="client"></div>
+	<h1 class="client">Client<span class="title-line"></span></h1>
+	<style>
+		.server {
+			position: absolute;
+			left: 50%;
+			color: #1E2A83;
+			font-size: 28px;
+			scale: 1;
+			width: 80px;
+			font-family: "moonb", sans-serif;
+			margin: 0 auto;
+			margin-top: 10px;
+			margin-left: -310px;
+			transition: color 0.25s linear, transform 0.25s ease-in-out;
+			transform: scale(1)
+		}	
+		.server:hover {
+			color: #405ff7;
+			transform: scale(1.1);
+		}
+		.client {
+			position: absolute;
+			left: 50%;
+			color: #1E2A83;
+			font-size: 28px;
+			width: 80px;
+			font-family: "moonb", sans-serif;
+			margin-left: 220px;
+			margin-top: 10px;
+			transition: color 0.25s linear, transform 0.25s ease-in-out;
+			transform: scale(1)
+		}	
+		.client:hover {
+			color: #405ff7;
+			transform: scale(1.1);
+		}			
+	</style>
+	<a href="https://pentrumstudios.github.io/" class="title">
+	<div class="title"></div>
+	 <h1 class="title">Pentrum Studios<span class="title-line"></span></h1>
+	</a>
+	   <style>
+		   a.title {
+			   display: block;
+			   text-decoration: none;
+			   margin: 0 auto;
+			   width: 340px;
+		   }
+		   .title {
+			   color: #405ff7;
+			   font-size: 46px;
+			   font-family: 'moonb', sans-serif;
+			   margin: 0 auto;
+			   margin-top: 15px;
+			   width: 340px;
+			   transition: transform 0.25s ease;
+		   }
+		   .title:hover {
+			   transform: translateY(-5px);
+		   }
+	   </style>   
+	<div class="title-line"></div>
+		<style>
+     .title-line {
+		opacity: 0;
+       	width: 330px;
+  		height: 10px;
+  		display: flex;
+  		background-size: 300% 300%;
+        background: #405ff7;
+		border-radius: 25px;
+		transition: opacity 0.25s ease, transform 0.5s ease;
+		transform: scale(0);		
+                }
+			    .title:hover .title-line {
+      opacity: 1;
+	  transform: scale(1);
+    }
+		</style>
+	<div class="navbar"></div>
+		<style>
+			.navbar {
+				opacity: 1;
+				background: #080917;
+				width: 100%;
+				height: 70px;
+				box-shadow: 0px 5px 50px 15px rgba(0, 0, 0, 1);
+				margin: 0 auto;
+				margin-top: -80px;
+				border-radius: 25px;
+				transition: box-shadow 0.25s ease;
+				overflow: hidden;
+			}
+  .navbar:hover,		
+  .title:hover ~ .navbar {
+    box-shadow: 0 0px 100px rgba(64, 95, 247, 1);
+  }	
+  .navbar:hover,		
+  .server:hover ~ .navbar {
+    box-shadow: 0 0px 100px rgba(64, 95, 247, 1);
+  }	
+  .navbar:hover,		
+  .client:hover ~ .navbar {
+    box-shadow: 0 0px 100px rgba(64, 95, 247, 1);
+  }				
+	</style>
+</body>
+</html>
