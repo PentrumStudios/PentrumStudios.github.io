@@ -1,0 +1,8 @@
+@keyframes bounce {
+	from, to {
+		scale: 1;
+	}
+	50% {
+		scale: 1.08;
+}
+}
