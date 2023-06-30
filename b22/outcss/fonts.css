@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Varela Round';
+  src: url('fonts/varela.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'moonr';
+  src: url('fonts/moonreg.otf') format('truetype');
+}
+@font-face {
+  font-family: 'moonl';
+  src: url('fonts/moonlight.otf') format('truetype');
+}
+@font-face {
+  font-family: 'moonb';
+  src: url('fonts/moonbold.otf') format('truetype');
+}.client {
+}
+.server {
+}
