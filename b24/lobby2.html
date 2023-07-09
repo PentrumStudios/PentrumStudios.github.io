@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pentrum - Lobby</title>
+</head>
+<link rel="stylesheet" href="outcss/fonts.css">
+<link rel="stylesheet" href="animations/animations.css">
+<body>
+<div class="blobrot">
+	<div class="blob1"></div>
+	<div class="blob2"></div>
+	<div class="blob3"></div>
+</div>
+	<style>
+		.blob1 {
+			height: 500px;
+			width: 500px;
+			border-radius: 50%;
+			background-color: #2BFF2F;
+		}
+		.blob2 {
+			position: absolute;
+			height: 550px;
+			width: 550px;
+			left: 83%;
+			margin-top: 50px;
+			border-radius: 50%;
+			background-color: #02B4FF;
+		}
+		.blob3 {
+			position: absolute;
+			height: 600px;
+			width: 600px;
+			left: 32%;
+			margin-top: 50px;
+			border-radius: 50%;
+			background-color: #7900FF;
+		}
+		.blobrot {
+			position: relative;
+			margin-left: 50%;
+			height: 1%;
+			width: 1%;
+			z-index: 1;
+			margin-top: 50px;
+            animation: rotate 77s infinite linear;
+			filter: blur(805px);
+            z-index: 1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+		body {	
+			background: #1E1E1E;
+			overflow: hidden;
+		}
+	</style>
+</body>
+<section class="navbarhelp">
+	<div class="navbar">
+		<h1 class="title">Pentrum Network</h1>
+	</div></section>
+	<style>
+		.navbarhelp {
+			position: fixed;
+            margin: -550px auto;
+			background-color: #011010;
+            width: 99.2%;
+			height: 205px;
+			border-radius: 10px;
+            z-index: 2;
+		}
+		.navbar { 
+			background-color: #0E0E0E;
+			height: 205px;
+			border-radius: 10px;
+			transition: background 0.3s ease;
+		}
+		.title {
+			position: absolute;
+			text-align: center;
+			margin-top: 30px;
+            height: 100%;
+			width: 100%;
+            text-shadow: 0px 0px 0px #ffffff;
+			font-family: "moonb",sans-serif;
+			font-size: 95px;
+			color: #ffffff;
+            transition: text-shadow 0.7s ease, transform 0.4s cubic-bezier(.53,-0.3,.15,1.95);
+		}
+        .title:hover {
+            text-shadow: 0px 0px 50px #ffffff;
+            transform: scale(1.1);
+        }
+	</style>
+</html>
