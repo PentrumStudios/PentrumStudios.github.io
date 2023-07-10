@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pentrum - Lobby</title>
+</head>
+<link rel="stylesheet" href="outcss/fonts.css">
+<link rel="stylesheet" href="animations/animations.css">
+<body>
+<div class="blobrot">
+	<div class="blob1"></div>
+	<div class="blob2"></div>
+	<div class="blob3"></div>
+</div>
+	<style>
+		.blob1 {
+			height: 500px;
+			width: 500px;
+			border-radius: 50%;
+			background-color: #2BFF2F;
+		}
+		.blob2 {
+			position: absolute;
+			height: 550px;
+			width: 550px;
+			left: 83%;
+			margin-top: 50px;
+			border-radius: 50%;
+			background-color: #02B4FF;
+		}
+		.blob3 {
+			position: absolute;
+			height: 600px;
+			width: 600px;
+			left: 32%;
+			margin-top: 50px;
+			border-radius: 50%;
+			background-color: #7900FF;
+		}
+		.blobrot {
+			position: relative;
+			margin-left: 50%;
+			height: 1%;
+			width: 1%;
+			z-index: 1;
+			margin-top: 50px;
+            animation: rotate 57s infinite linear;
+			filter: blur(805px);
+            z-index: 1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+		body {	
+			background: #1E1E1E;
+			overflow: hidden;
+		}
+	</style>
+</body>
+<section class="navbarhelp">
+	<div class="navbar">
+		<h1 class="title">Pentrum Network</h1>
+        <h1 class="server">Server</h1>
+        <h1 class="client">Client</h1>
+        <h1 class="credit">b25</h1>
+	</div></section>
+	<style>
+		.navbarhelp {
+			position: fixed;
+            margin: -540px auto;
+			background-color: #011010;
+            width: 105px;
+			height: 105px;
+			border-radius: 10px;
+            z-index: 2;
+            box-shadow: 0px 0px 5px 3px #000000;
+            overflow: hidden;
+            transition: width 1.6s cubic-bezier(.49,-0.01,.48,1.1), height 0.2s cubic-bezier(.49,-0.01,.48,1.1);
+		}
+		.navbar { 
+			background-color: #0E0E0E;
+			height: 100%;
+			border-radius: 10px;
+			transition: background 0.3s ease;
+		}
+        .navbarhelp:hover {
+            width: 650px;
+            height: 150px;
+        }
+        .navbarhelp:hover .title {
+            text-shadow: 0px 0px 50px #ffffff;
+            transform: scale(1.04);
+            font-size: 75px;
+            letter-spacing: 0px;
+            margin-top: 0px;
+        }   
+
+		.title {
+			position: absolute;
+			text-align: left;
+            white-space: nowrap;
+			margin-top: -10px;
+            margin-left: 30px;
+            height: 100%;
+			width: 100%;
+            text-shadow: 0px 0px 0px #ffffff;
+			font-family: "moonb",sans-serif;
+			font-size: 95px;
+            letter-spacing: 30px;
+			color: #ffffff;
+            transition: text-shadow 0.7s ease, transform 1.4s cubic-bezier(.53,-0.3,.15,1.95), font-size 0.7s ease, letter-spacing 0.2s ease, margin-top 0.7s ease;
+		}
+        .title:hover {
+            text-shadow: 0px 0px 50px #ffffff;
+            transform: scale(1.04);
+            font-size: 95px;
+            letter-spacing: 0px;
+            margin-top: 0px;
+        }
+        .server {
+ 			position: absolute;
+			text-align: left;
+            white-space: nowrap;
+			margin-top: 100px;
+            margin-left: 20px;
+            height: 100%;
+			width: 100%;
+            text-shadow: 0px 0px 0px #ffffff;
+			font-family: "moonr",sans-serif;
+			font-size: 35px;
+			color: #ffffff;
+            transition: text-shadow 0.7s ease, transform 1.4s cubic-bezier(.53,-0.3,.15,1.95), font-size 0.7s ease, letter-spacing 0.2s ease;           
+        }
+        .client {
+ 			position: absolute;
+			text-align: left;
+            opacity: 0.1;
+            margin-top: 100px;
+            margin-left: 20px;
+            height: 35px;
+			width: 90px;
+            text-shadow: 0px 0px 0px #ffffff;
+			font-family: "moonr",sans-serif;
+			font-size: 35px;
+			color: #ffffff;
+            transition: text-shadow 0.7s ease, margin-top 1.4s cubic-bezier(.53,-0.3,.15,1.95), opacity 0.3s ease;           
+        }
+        .client:hover {
+            margin-top: 90px;
+            opacity: 1;            
+        }
+        .server {
+ 			position: absolute;
+			text-align: left;
+            opacity: 0.1;
+            margin-top: 100px;
+            margin-left: 120px;
+            height: 35px;
+			width: 90px;
+            text-shadow: 0px 0px 0px #ffffff;
+			font-family: "moonr",sans-serif;
+			font-size: 35px;
+			color: #ffffff;
+            transition: text-shadow 0.7s ease, margin-top 1.4s cubic-bezier(.53,-0.3,.15,1.95), opacity 0.3s ease;           
+        }
+        .server:hover {
+            margin-top: 90px;
+            opacity: 1;            
+        }
+        .credit {
+ 			position: absolute;
+			text-align: right;
+            opacity: 0.2;
+            margin-top: 100px;
+            margin-left: 80%;
+            height: 35px;
+			width: 100px;
+            text-shadow: 0px 0px 0px #ffffff;
+			font-family: "moonb",sans-serif;
+			font-size: 35px;
+			color: #ffffff;         
+        }
+	</style>
+</html>

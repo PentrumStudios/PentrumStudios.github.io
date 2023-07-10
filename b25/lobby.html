@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pentrum - Lobby</title>
+</head>
+<link rel="stylesheet" href="outcss/fonts.css">
+<link rel="stylesheet" href="animations/animations.css">
+<body>
+
+	<style>
+		body {	
+			background: #111111;
+		}
+	</style>
+	<a href="https://pentrumstudios.github.io/server/" class="server">
+	<div class="server"></div>
+	 <h1 class="server">Server<span class="title-line"></span></h1>
+	</a>
+	<a href="https://pentrumstudios.github.io/client/" class="client">
+	<div class="client"></div>
+	 <h1 class="client">Client<span class="title-line"></span></h1>
+	</a>	
+	<style>
+		 a.server {
+		    display: block;
+			text-decoration: none;
+			margin: 0px auto;
+			width: 80px;
+		   }		
+		.server {
+			position: absolute;
+			left: 50%;
+			color: #086ab4;
+			font-size: 28px;
+			scale: 1;
+			width: 80px;
+			font-family: "moonb", sans-serif;
+			margin: 0 auto;
+			margin-top: 10px;
+			margin-left: -310px;
+			transition: color 0.25s linear, transform 0.5s cubic-bezier(.53,-0.3,.15,1.95);
+			transform: scale(1)
+		}	
+		.server:hover {
+			color: #2f3b92;
+			transform: scale(1.05);
+		}
+		 a.client {
+		    display: block;
+			text-decoration: none;
+			margin: 0 auto;
+			width: 80px;
+		   }		
+		.client {
+			position: absolute;
+			left: 50%;
+			color: #086ab4;
+			font-size: 28px;
+			width: 80px;
+			font-family: "moonb", sans-serif;
+			margin-left: 150px;
+			margin-top: 10px;
+			transition: color 0.25s linear, transform 0.5s cubic-bezier(.53,-0.3,.15,1.95);
+			transform: scale(1)
+		}	
+		.client:hover {
+			color: #2f3b92;
+			transform: scale(1.05);
+		}			
+	</style>
+	<a href="https://pentrumstudios.github.io/" class="title">
+	<div class="title"></div>
+	 <h1 class="title">Pentrum Studios<span class="title-line"></span></h1>
+	</a>
+	   <style>
+		   a.title {
+			   display: block;
+			   text-decoration: none;
+			   margin: 0 auto;
+			   width: 340px;
+		   }
+		   .title {
+			   color: #086ab4;
+			   font-size: 46px;
+			   font-family: 'moonb', sans-serif;
+			   margin: 0 auto;
+			   margin-top: 15px;
+			   width: 350px;
+			   transition: color 0.3s linear ,transform 0.5s cubic-bezier(.6,0,.09,1.64);
+		   }
+		   .title:hover {
+			   color: #2f3b92;
+			   transform: translateY(-3px);   
+		   }
+	   </style>   
+	<div class="title-line"></div>
+		<style>
+     .title-line {
+		opacity: 0;
+       	width: 340px;
+  		height: 5px;
+  		display: flex;
+  		background-size: 300% 300%;
+        background: #2f3b92;
+		border-radius: 25px;
+		transition: opacity 0.25s ease, transform 0.7s ease;
+		transform: scale(0);		
+                }
+			    .title:hover .title-line {
+      opacity: 1;
+	  transform: scale(1);
+    }
+		</style>
+	<div class="navbar"></div>
+		<style>
+			.navbar {
+				opacity: 1;
+				background: #111111;
+				width: 40%;
+				height: 70px;
+				box-shadow: 0px 5px 50px 15px rgba(0, 0, 0, 1);
+				margin: 0 auto;
+				margin-top: -72px;
+				border-radius: 10px;
+				transition: box-shadow 0.25s ease, transform 0.2s cubic-bezier(.6,0,.09,1.64);
+			}
+  .navbar:hover,		
+  .title:hover ~ .navbar {
+	  box-shadow: 0px 0px 50px 0px #2f3b92;
+  }	
+  .navbar:hover,		
+  .server:hover ~ .navbar {
+	  box-shadow: 0px 0px 50px 0px #2f3b92;
+  }	
+  .navbar:hover,		
+  .client:hover ~ .navbar {
+	  box-shadow: 0px 0px 50px 0px #2f3b92;
+  }					
+	</style>
+</body>
+<body>
+	<div class="start-up-line"></div>
+	<style>
+		.start-up-line {
+			display: flex;
+			width: 100%;
+			height: 5px;
+			background-color: #020206;
+			margin: 15px auto;
+		}
+	</style>
+	<div class="start"></div>
+	 <h1 class="start">Your journey starts here and now<span class="start-line"></span></h1>
+	<style>
+		.start {
+			color: #2f3b92;
+			font-size: 52px;
+			font-family: "moonr", sans-serif;
+			width: 845px;
+			margin: 20px auto;
+			transition: color 0.25s linear, transform 0.4s cubic-bezier(.53,-0.3,.15,1.95);
+		}
+		.start:hover {
+			transform: scale(1.08);
+			color: #086ab4; 
+		}
+	</style>
+	<style>
+     .start-line {
+		opacity: 0;
+       	width: 70px;
+  		height: 5px;
+		margin: 10px auto;
+		display: flex;
+        background: #086ab4;
+		border-radius: 25px;
+		transition: opacity 0.2s ease, width 0.7s ease, color 0.2s ease;		
+                }
+			    .start:hover .start-line {
+	  color: #086ab4;
+      opacity: 1;
+	  width: 820px
+    }
+	</style>
+	<div class="start-description"></div>
+	 <h5 class="start-description">Just look how far we have come since the launch of Pentrum Studios<span class="start"></span></h5>
+	<style>
+		.start-description {
+			color: #727272;
+			font-size: 20px;
+			font-family: "moonr", sans-serif;
+			margin: -25px auto;
+			width: 670px;
+			line-height: 0.5;
+		}
+	</style>
+	<body>
+		<a href="https://pentrumstudios.github.io/server">
+		<div class="show1">
+		  <img src="pngs/show1.png"/>
+		</div>
+			</a>
+		<a href="https://pentrumstudios.github.io/client">
+		<div class="show2">
+		  <img src="pngs/show2.png"/>
+		</div>
+			</a>
+		<style>
+			.show1 {
+				position: absolute;
+				left: 50%;
+				margin-top: 50px;
+				margin-left: -500px;
+				width: 500px;
+				height: 250px;
+				border: 2px solid #252525;
+				overflow: hidden;
+				border-top-left-radius: 25px;
+				border-bottom-left-radius: 25px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;				
+				transition: border 0.7s ease;
+			}
+			.show1 > img {
+				width: 100%;
+				height: 100%;
+				transition: transform 0.4s cubic-bezier(.53,-0.3,.15,1.95);
+			}
+			.show1:hover > img {
+				transform: scale(1.2);		
+			}
+			.show1:hover ~ .show1-title {
+				color: #086ab4;
+				transform: scale(1.08)
+			}	
+			.show1:hover {
+				border: 2px solid #086ab4;
+			}
+			.show2 {
+				position: absolute;
+				left: 50%;
+				margin-top: 50px;
+				margin-left: 10px;
+				width: 500px;
+				height: 250px;
+				border: 2px solid #252525;
+				overflow: hidden;
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+				border-top-right-radius: 25px;
+				border-bottom-right-radius: 25px;				
+				transition: border 0.7s ease;
+			}
+			.show2 > img {
+				width: 100%;
+				height: 100%;
+				transition: transform 0.4s cubic-bezier(.53,-0.3,.15,1.95);
+			}
+			.show2:hover > img {
+				transform: scale(1.2);		
+			}
+			.show2:hover ~ .show2-title {
+				color: #086ab4;
+				transform: scale(1.08)
+			}			
+			.show2:hover {
+				border: 2px solid #086ab4;
+			}		
+		</style>
+		<div class="show1-title"></div>
+		<h2 class="show1-title">Pentrum Survival</h2>
+		<style>
+			.show1-title {
+				position: absolute;
+				font-size: 38px;
+				font-family: "moonb", sans-serif;
+				color: #086ab4;
+				left: 50%;
+				width: 320px;
+				margin-top: 300px;
+				margin-left: -380px;
+				transition: color 0.7s ease, transform 0.7s cubic-bezier(.53,-0.3,.15,1.95);
+			}			
+		</style>
+		<div class="show2-title"></div>
+		<h2 class="show2-title">Pentrum Client</h2>
+		<style>
+			.show2-title {
+				position: absolute;
+				font-size: 38px;
+				font-family: "moonb", sans-serif;
+				color: #086ab4;
+				left: 50%;
+				width: 320px;
+				margin-top: 300px;
+				margin-left: 130px;
+				transition: color 0.7s ease, transform 0.7s cubic-bezier(.53,-0.3,.15,1.95);
+			}
+		</style>
+		<div class="show1-desc-line"></div>
+		<div class="show2-desc-line"></div>
+		<div class="show1-desc"></div>
+		<h2 class="show1-desc">Just a minecraft server that was worked on for 9 months with custom damage models, item, functions, enchantments and much more.</h2>
+		<div class="show2-desc"></div>
+		<h2 class="show2-desc">A minecraft client which is no longer being worked on. will be updated rarely. its also private :)</h2>	
+		<style>
+			.show1-desc-line {
+				position: absolute;
+				left: 50%;
+				margin-top: 345px;
+				margin-left: -500px;
+				width: 500px;
+				height: 5px;
+				border-radius: 15px;
+				background-color: #1F1F1F;
+			}
+			.show2-desc-line {
+				position: absolute;
+				left: 50%;
+				margin-top: 345px;
+				margin-left: 12px;
+				width: 500px;
+				height: 5px;
+				border-radius: 15px;
+				background-color: #1F1F1F;
+			}	
+			.show1-desc {
+				position: absolute;
+				font-family: moonr, sans-serif;
+				font-size: 20px;
+				color: #353535;
+				left: 50%;
+				text-align: center;
+				margin-left: -470px;
+				margin-top: 355px;
+				width: 450px;
+			}
+			.show2-desc {
+				position: absolute;
+				font-family: moonr, sans-serif;
+				color: #353535;
+				left: 50%;
+				text-align: center;
+				margin-left: 38px;
+				margin-top: 355px;
+				width: 450px;
+			}
+		</style>
+	</body>
+<body>
+	<div class="credits-hint"></div>
+	<h2 class="credits-hint">&lt; Hover me&nbsp;</h2>
+	<div class="credits">
+		<h2 class="cr-owner">Website made by Apsz</h2>
+		<h2 class="cr-desc">i wasted 3 hours of my life for this shit</h2>
+	</div>
+	<style>
+		.credits {
+			position: absolute;
+			background-color: #020206;
+			align-self: center;
+			margin-left: -350px;
+			width: 400px;
+			height: 80px;
+			margin-top: -191px;
+		    border: 2px solid #252525;
+			border-radius: 10px;
+			box-shadow: 0px 5px 50px 15px rgba(0, 0, 0, 1);
+			transition: transform 0.7s cubic-bezier(.24,-0.01,0,1.32);
+		}
+		.credits-hint {
+			position: absolute;
+			font-family: "moonb", sans-serif; 
+			opacity: 0.1;
+			color: aliceblue;
+			text-align: center;
+			margin-left: 70px;
+			margin-top: -165px;
+		}
+		.credits:hover {
+			transform: translateX(350px);
+		}
+		.cr-owner {
+			color: #086ab4;
+			text-align: center;
+			margin-top: 5px;
+			font-family: "moonb", sans-serif;
+		}
+		.cr-desc {
+			color: #494949;
+			text-align: center;
+			font-size: 15px;
+			width: 180px;
+			margin-top: -14px;
+			margin-left: 110px;
+			font-family: "moonb", sans-serif;
+		}		
+	</style>
+	</body></body>
+</html>
